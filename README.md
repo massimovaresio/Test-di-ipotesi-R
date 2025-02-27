@@ -69,9 +69,9 @@ cat("Valori critici: -", z_critico, " e ", z_critico, "\n")
 Il *p-value* è la probabilità di ottenere un valore della statistica test uguale o più estremo rispetto a quello osservato, se l'ipotesi nulla fosse vera.
 
 Immaginaniamo di eseguire il test in più fasi:
-1. prima consideriamo solo la coda destra della distribuzione Normale. Calcoliamo la probabilità di ottenere un valore più grande di Z osservato (`z_test`). Questa è l’area a destra di Z nella curva della distribuzione Normale.
-2. poi consideriamo solo la coda sinistra. La distribuzione Normale è simmetrica, quindi la probabilità di ottenere un valore più piccolo di −Z è esattamente la stessa di quella calcolata nella coda destra.
-3. Infine, sommiamo le due probabilità.
+1. prima consideriamo solo la coda destra della distribuzione Normale. Calcoliamo la probabilità di ottenere un valore più grande di Z osservato (`z_test`). Questa è l’area a destra di Z nella curva della distribuzione Normale;
+2. poi consideriamo solo la coda sinistra. La distribuzione Normale è simmetrica, quindi la probabilità di ottenere un valore più piccolo di −Z è esattamente la stessa di quella calcolata nella coda destra;
+3. infine, sommiamo le due probabilità perché il test è bilaterale.
 
 Dato che nel test bilaterale vogliamo considerare entrambi gli estremi, sommiamo la probabilità della coda destra e della coda sinistra.
 In pratica, possiamo scrivere questa somma direttamente come moltiplicazione per 2 di una delle due probabilità, perché le due aree sono uguali.
