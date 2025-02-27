@@ -99,4 +99,5 @@ if (p_value < alpha) {
 **Commento:** dato che il *p-value* calcolato è maggiore del livello di significatività `alpha = 0.01` l'ipotesi nulla non è rifiutata.
 
 ![Test bilaterale con p_value](test-bilaterale_p-value.jpeg)
+
 <sub>Fonte immagine: produzione propria con RStudio, il codice per la creazione del grafico è stato prodotto con strumenti di AI generativa.</sub>
