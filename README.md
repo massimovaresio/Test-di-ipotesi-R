@@ -66,7 +66,15 @@ cat("Valori critici: -", z_critico, " e ", z_critico, "\n")
 **Commento:** abbiamo calcolato la statistica test Z e l'abbiamo confrontata con i valori critici della distribuzione Normale. Poiché Z rientra nell'intervallo di accettazione, cioè non eccede i valori critici, non possiamo rifiutare l'ipotesi nulla.
 
 ### 3) Calcola il p-value del test precedente.
-In pratica, devo verificare se la media della popolazione è 1,20 cm con probabilità almeno del 99%. Il fatto che la media sia 1,20 cm è l'ipotesi nul
+Il *p-value* è la probabilità di ottenere un valore della statistica test uguale o più estremo rispetto a quello osservato, se l'ipotesi nulla fosse vera.
+
+Immaginaniamo di eseguire il test in più fasi:
+1. prima consideriamo solo la coda destra della distribuzione Normale. Calcoliamo la probabilità di ottenere un valore più grande di Z osservato (`z_test`). Questa è l’area a destra di Z nella curva della distribuzione Normale.
+2. poi consideriamo solo la coda sinistra. La distribuzione Normale è simmetrica, quindi la probabilità di ottenere un valore più piccolo di −Z è esattamente la stessa di quella calcolata nella coda destra.
+3. Infine, sommiamo le due probabilità.
+
+Dato che nel test bilaterale vogliamo considerare entrambi gli estremi, sommiamo la probabilità della coda destra e della coda sinistra.
+In pratica, possiamo scrivere questa somma direttamente come moltiplicazione per 2 di una delle due probabilità, perché le due aree sono uguali.
 
 ```
 # Versione di ipotesi con calcolo del p_value
@@ -88,4 +96,4 @@ if (p_value < alpha) {
   cat("Non possiamo rifiutare H0: non abbiamo prove sufficienti per dire che la media è diversa da 1.20 cm\n")
 }
 ```
-**Commento:** abbiamo calcolato la statistica test Z e l'abbiamo confrontata con i valori critici della distribuzione Normale. Poiché Z rientra nel
+**Commento:** dato che il *p-value* calcolato è maggiore del livello di significatività `alpha = 0.01` l'ipotesi nulla non è rifiutata.
