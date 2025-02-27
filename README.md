@@ -101,3 +101,5 @@ if (p_value < alpha) {
 ![Test bilaterale con p_value](test-bilaterale_p-value.jpeg)
 
 <sub>Fonte immagine: produzione propria con RStudio, il codice per la creazione del grafico è stato prodotto con strumenti di AI generativa.</sub>
+
+**Legenda:** le linee rosse tratteggiate sono i valori della statistica test, mentre le due aree blu rappresentano il *p-value*.
