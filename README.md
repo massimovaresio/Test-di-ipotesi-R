@@ -97,3 +97,6 @@ if (p_value < alpha) {
 }
 ```
 **Commento:** dato che il *p-value* calcolato è maggiore del livello di significatività `alpha = 0.01` l'ipotesi nulla non è rifiutata.
+
+![Test bilaterale con p_value](assets/)
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
