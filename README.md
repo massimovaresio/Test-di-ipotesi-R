@@ -31,3 +31,5 @@ cat("Intervallo di confidenza al 95% per mu: [", lower_bound, ",", upper_bound, 
 
 ### 2) Costruire un test di ipotesi con probabilità di errore del I tipo pari al 1% per verificare se la media dei diametri dei cannoli è *mu* = 1,20 cm.
 In pratica, devo verificare se la media della popolazione è 1,20 cm con probabilità almeno del 99%. Il fatto che la media sia 1,20 cm è l'ipotesi nulla H<sub>0</sub>, cioè quella che devo verificare se è vera o falsa.
+- Se sì, accetto H<sub>0</sub> (equivale a dire che l'affermazione è falsa al massimo il 1% delle volte)
+- Se no, rifiuto H<sub>0</sub> (equivale a dire che l'affermazione è falsa più del 1% delle volte)
