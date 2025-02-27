@@ -8,4 +8,4 @@ L'esercizio è implementato con linguaggio R e software statistico [RStudio](htt
 Si prega di rispettare i termini di licenza descritti nel file `LICENSE.md`
 
 ## Esercizio
-Un'azienda di pasticceria vuole fare un'analisi qualità per verificare il diametro dei cannoli prodotti. Raccolgono un campione di 81 cannoli freschi di produzione, ottendendo una media campionaria di 1,23 cm. Si assuma che il campione è guassiano con una media *mu* ignota e varianza nota *sigma quadro* = 0,04 cm.
+Un'azienda di pasticceria vuole fare un'analisi qualità per verificare il diametro dei cannoli prodotti. Raccolgono un campione di 81 cannoli freschi di produzione, ottendendo una media campionaria di 1,23 cm. Si assuma che il campione è gaussiano con una media *mu* ignota e varianza nota *sigma quadro* = 0,04 cm.
