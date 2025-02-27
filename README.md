@@ -27,7 +27,7 @@ upper_bound <- x_bar + (z_alpha * se)
 # Stampa dei risultati
 cat("Intervallo di confidenza al 95% per mu: [", lower_bound, ",", upper_bound, "]\n")
 ```
-**Commento:** questo intervallo rappresenta il range di valori in cui crediamo che la media reale *mu* dei cannoli si trovi con una probabilità del 95%. Se ripetessimo l’esperimento molte volte, il 95% degli intervalli costruiti in questo modo conterrebbe il vero valore *mu*.
+**Commento:** `z_alpha` mi sta dicendo quanto sono lontano dalla media, in proporzione alla deviazione standard. Questo intervallo rappresenta il range di valori in cui crediamo che la media reale *mu* dei cannoli si trovi con una probabilità del 95%. Se ripetessimo l’esperimento molte volte, il 95% degli intervalli costruiti in questo modo conterrebbe il vero valore *mu*.
 
 ### 2) Costruire un test di ipotesi con probabilità di errore del I tipo pari al 1% per verificare se la media dei diametri dei cannoli è *mu* = 1,20 cm.
 In pratica, devo verificare se la media della popolazione è 1,20 cm con probabilità almeno del 99%. Il fatto che la media sia 1,20 cm è l'ipotesi nulla H<sub>0</sub>, cioè quella che devo verificare se è vera o falsa.
