@@ -35,3 +35,32 @@ In pratica, devo verificare se la media della popolazione è 1,20 cm con probabi
 - Se no, rifiuto H<sub>0</sub> (equivale a dire che l'affermazione è falsa più del 1% delle volte)
 
 In questo contesto, l'ipotesi alternativa H<sub>1</sub> è che la media sia diversa da 1,20 cm con livello di significatività del 1%, pertanto si tratta di un test bilaterale.
+
+```
+# Dati per il test di ipotesi
+x_bar <- 1.23      # Media campionaria
+mu_0 <- 1.20       # Media ipotizzata sotto H0
+sigma <- sqrt(0.04) # Deviazione standard nota
+n <- 81            # Dimensione campione
+alpha <- 0.01      # Livello di significatività
+
+# Calcolo della statistica test Z
+z_test <- (x_bar - mu_0) / (sigma / sqrt(n))
+
+# Valori critici della normale standard per alfa/2
+z_critico <- qnorm(1 - alpha/2)
+
+# Decisione del test senza valore assoluto
+if (z_test > z_critico) {
+  cat("Rifiuto H0: la media è significativamente maggiore di 1.20 cm\n")
+} else if (z_test < -z_critico) {
+  cat("Rifiuto H0: la media è significativamente minore di 1.20 cm\n")
+} else {
+  cat("Accetto H0: non ho prove sufficienti per dire che la media è diversa da 1.20 cm\n")
+}
+
+# Stampa del valore della statistica test e dei valori critici
+cat("Valore della statistica test Z:", z_test, "\n")
+cat("Valori critici: -", z_critico, " e ", z_critico, "\n")
+```
+**Commento:** abbiamo calcolato la statistica test Z e l'abbiamo confrontata con i valori critici della distribuzione Normale. Poiché Z rientra nell'intervallo di accettazione, cioè non eccede i valori critici, non possiamo rifiutare l'ipotesi nulla.
