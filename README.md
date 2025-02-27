@@ -64,3 +64,28 @@ cat("Valore della statistica test Z:", z_test, "\n")
 cat("Valori critici: -", z_critico, " e ", z_critico, "\n")
 ```
 **Commento:** abbiamo calcolato la statistica test Z e l'abbiamo confrontata con i valori critici della distribuzione Normale. Poiché Z rientra nell'intervallo di accettazione, cioè non eccede i valori critici, non possiamo rifiutare l'ipotesi nulla.
+
+### 3) Calcola il p-value del test precedente.
+In pratica, devo verificare se la media della popolazione è 1,20 cm con probabilità almeno del 99%. Il fatto che la media sia 1,20 cm è l'ipotesi nul
+
+```
+# Versione di ipotesi con calcolo del p_value
+
+# Calcolo della statistica test Z
+z_test <- (x_bar - mu_0) / (sigma / sqrt(n))
+
+# Calcolo del p-value per il test bilaterale
+p_value <- 2 * (1 - pnorm(z_test))
+
+# Stampa dei risultati
+cat("Statistica test Z:", z_test, "\n")
+cat("p-value del test:", p_value, "\n")
+
+# Decisione finale: confronto p-value con alfa
+if (p_value < alpha) {
+  cat("Rifiutiamo H0: la media è significativamente diversa da 1.20 cm (con livello di confidenza 99%)\n")
+} else {
+  cat("Non possiamo rifiutare H0: non abbiamo prove sufficienti per dire che la media è diversa da 1.20 cm\n")
+}
+```
+**Commento:** abbiamo calcolato la statistica test Z e l'abbiamo confrontata con i valori critici della distribuzione Normale. Poiché Z rientra nel
