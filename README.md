@@ -50,7 +50,7 @@ z_test <- (x_bar - mu_0) / (sigma / sqrt(n))
 # Valori critici della normale standard per alfa/2
 z_critico <- qnorm(1 - alpha/2)
 
-# Decisione del test senza valore assoluto
+# Decisione del test
 if (z_test > z_critico) {
   cat("Rifiuto H0: la media è significativamente maggiore di 1.20 cm\n")
 } else if (z_test < -z_critico) {
